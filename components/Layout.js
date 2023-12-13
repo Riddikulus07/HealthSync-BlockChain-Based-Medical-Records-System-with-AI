@@ -10,6 +10,7 @@ export default props => {
         <>
             <Head>
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"></link>
+
             </Head>
 
             <Segment
@@ -19,13 +20,14 @@ export default props => {
             >
             <MenuBar/>
                 <Icon size='huge' name='hospital'/>
-                <Header as='h2' color='blue' style={{ fontSize:'3em', fontWeight:'normal'}} content='Blockchain Medical Records'/>
+                <Header as='h2' color='blue' style={{ fontSize:'3em', fontWeight:'normal'}} content='HealthSync'/>
                 <Header as='h3' style={{ fontSize:'1.5em', fontWeight:'normal'}} content='Ensure that your records are safe and sound'/>
             </Segment>
             
             <Container>
                 {props.children}
             </Container>
+
         </>
     );
 };

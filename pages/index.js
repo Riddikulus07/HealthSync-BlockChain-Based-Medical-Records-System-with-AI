@@ -33,7 +33,7 @@ const HomepageHeading = ({ mobile }) => (
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"></link>
     <Header
       as='h1'
-      content='Blockchain Medical Record System'
+      content='HealthSync'
       inverted
       style={{
         fontSize: mobile ? '2em' : '4em',
@@ -349,6 +349,20 @@ ResponsiveContainer.propTypes = {
 
 const HomepageLayout = () => (
   <ResponsiveContainer>
+     <script>
+      {`
+        window.embeddedChatbotConfig = {
+          chatbotId: "GBTLfyPpmGUOa652CK1Rp",
+          domain: "www.chatbase.co"
+        };
+      `}
+    </script>
+    <script
+      src="https://www.chatbase.co/embed.min.js"
+      chatbotId="GBTLfyPpmGUOa652CK1Rp"
+      domain="www.chatbase.co"
+      defer
+    ></script>
     <Segment style={{ padding: '8em 0em' }} vertical>
       <Grid container stackable verticalAlign='middle'>
         <Grid.Row>

@@ -3,10 +3,11 @@ const Web3 = require('web3');
 const compiledRecord = require('./build/Record.json');
 
 //Link to rinkeby network by using Infura and providing seed phrase of metamask wallet
-const provider = new HDWalletProvider(
-    'about suspect agree silk raw true ketchup cupboard trick hazard seek shock',
-    'https://sepolia.infura.io/v3/a38b018f44464862b0529640109fe5bf',
-);
+
+const privateKey = process.env.PRIVATE_KEY || 'about suspect agree silk raw true ketchup cupboard trick hazard seek shock';
+const infuraApiKey = process.env.INFURA_API_KEY || 'a38b018f44464862b0529640109fe5bf';
+
+const provider = new HDWalletProvider(privateKey, `https://sepolia.infura.io/v3/${infuraApiKey}`);
 
 const web3 = new Web3(provider);
 
