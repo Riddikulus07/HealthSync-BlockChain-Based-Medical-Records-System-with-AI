@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Grid, Segment, Header, Image  } from 'semantic-ui-react';
+import { Grid, Segment, Header, Image } from 'semantic-ui-react';
 import Layout from '../components/Layout';
 import record from '../ethereum/record';
 import web3 from '../ethereum/web3';
@@ -13,14 +13,14 @@ class RecordDetails extends Component {
         var records, records2, appointment, profilePic;
 
         try {
-            records = await record.methods.searchPatientDemographic(addr).call({from: accounts[0]});
-            records2 = await record.methods.searchPatientMedical(addr).call({from: accounts[0]});
-            appointment = await record.methods.searchAppointment(addr).call({from: accounts[0]});  
+            records = await record.methods.searchPatientDemographic(addr).call({ from: accounts[0] });
+            records2 = await record.methods.searchPatientMedical(addr).call({ from: accounts[0] });
+            appointment = await record.methods.searchAppointment(addr).call({ from: accounts[0] });
 
-            if(appointment[0].includes("0x00000000000")) appointment[0] = '';
+            if (appointment[0].includes("0x00000000000")) appointment[0] = '';
 
-            profilePic = (records[3] == 'Male') ? 'https://cdn-icons-png.flaticon.com/128/3135/3135715.png' : 'https://cdn-icons-png.flaticon.com/512/3135/3135789.png';
-            
+            profilePic = (records[3] === 'Male') ? 'https://cdn-icons-png.flaticon.com/128/3135/3135715.png' : 'https://cdn-icons-png.flaticon.com/512/3135/3135789.png';
+
             return {
                 ic: records[0],
                 name: records[1],
@@ -29,7 +29,7 @@ class RecordDetails extends Component {
                 dob: records[4],
                 height: records[5],
                 weight: records[6],
-                
+
                 houseaddr: records2[0],
                 bloodgroup: records2[1],
                 allergies: records2[2],
@@ -47,13 +47,13 @@ class RecordDetails extends Component {
                 status: appointment[7],
                 profilePic
             };
-        }
-        catch (err) {
+        } catch (err) {
             alert("You don't have permission to view this account");
             Router.pushRoute('/list');
+            // Return an object even in case of an error
+            return {};
         }
     }
-
     renderDisplay(){
         return (
             <Grid columns={2} stackable className="fill-content">

@@ -1,0 +1,20 @@
+{
+  "/approve-doctor": "pages/approve-doctor.html",
+  "/dashboard": "pages/dashboard.js",
+  "/details-doctor": "pages/details-doctor.js",
+  "/details": "pages/details.js",
+  "/edit-appointment": "pages/edit-appointment.html",
+  "/edit-doctor": "pages/edit-doctor.html",
+  "/edit-patient": "pages/edit-patient.html",
+  "/": "pages/index.html",
+  "/list": "pages/list.js",
+  "/make-appointment": "pages/make-appointment.html",
+  "/new": "pages/new.html",
+  "/register-doctor": "pages/register-doctor.html",
+  "/register-patient": "pages/register-patient.html",
+  "/revoke-doctor": "pages/revoke-doctor.html",
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/404": "pages/404.html"
+}
