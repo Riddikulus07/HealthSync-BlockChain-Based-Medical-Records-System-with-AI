@@ -26,8 +26,8 @@ Welcome to the Ethereum Health Records DApp! This decentralized application is d
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/ethereum-health-records-dapp.git
-   cd ethereum-health-records-dapp
+   git clone https://github.com/Riddikulus07/HealthSync-BlockChain-Based-Medical-Records-System-with-AI
+   cd HealthSync-BlockChain-Based-Medical-Records-System-with-AI
    ```
 
 2. **Install Dependencies:**
@@ -40,15 +40,31 @@ Welcome to the Ethereum Health Records DApp! This decentralized application is d
    npm start
    ```
 
-4. **Connect Metamask:**
-   - Ensure you have Metamask installed in your browser.
-   - Connect Metamask to the local development network.
+4. **Register on Infura and Configure Sepolia Test Network:**
+   - Go to [Infura](https://infura.io/) and create an account.
+   - Create a new project and obtain your Infura API key.
+   - Replace the placeholder in `config.js` with your Infura API key.
+   - Select the Sepolia test network on Infura for your project.
+
+5. **Configure Metamask for Sepolia Test Network:**
+   - Open Metamask in your browser.
+   - Click on the network selection dropdown and choose "Custom RPC."
+   - Enter the following details:
+      - Network Name: Sepolia Test Network
+      - New RPC URL: [Infura Sepolia RPC URL]
+      - Chain ID: [Sepolia Chain ID]
+   - Save the configuration.
+
+6. **Get Sepolia Ethereum from Sepolia Faucet:**
+   - Visit the Sepolia Faucet [link].
+   - Follow the instructions to request Sepolia Ethereum (SETH).
+   - Use the received SETH for transactions within the DApp.
 
 ## Usage
 
 1. **Registering on the DApp:**
-   - Create a new account using Metamask.
-   - Complete the registration process, paying the associated gas fee.
+   - Create a new account using Metamask with Sepolia Test Network selected.
+   - Complete the registration process, paying the associated gas fee in SETH.
 
 2. **Managing Health Records:**
    - Update and manage your electronic health records securely on the Ethereum blockchain.
@@ -62,4 +78,3 @@ Welcome to the Ethereum Health Records DApp! This decentralized application is d
 ## Contributing
 
 We encourage contributions! Feel free to submit pull requests for features, bug fixes, or improvements. For major changes, please open an issue first to discuss your proposal.
-
