@@ -352,14 +352,14 @@ const HomepageLayout = () => (
      <script>
       {`
         window.embeddedChatbotConfig = {
-          chatbotId: "GBTLfyPpmGUOa652CK1Rp",
+          chatbotId: "Jmr77zQ1Ra6UH_fFKCXlF",
           domain: "www.chatbase.co"
         };
       `}
     </script>
     <script
       src="https://www.chatbase.co/embed.min.js"
-      chatbotId="GBTLfyPpmGUOa652CK1Rp"
+      chatbotId="Jmr77zQ1Ra6UH_fFKCXlF"
       domain="www.chatbase.co"
       defer
     ></script>
